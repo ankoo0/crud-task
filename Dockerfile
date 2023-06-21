@@ -1,0 +1,5 @@
+FROM postgres
+ENV POSTGRES_USER task
+ENV POSTGRES_PASSWORD password
+ENV POSTGRES_DB task_db
+

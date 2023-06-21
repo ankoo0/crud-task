@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "a1b01a0f-4962-457b-b3d2-03e6cc44b121",
+		"name": "Post Requests Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28075287"
+	},
+	"item": [
+		{
+			"name": "Get All Posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/posts/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"title\": \"Digital Chief Trainee Recruitment\",\r\n        \"content\": \"We are pleased to announce new recruitment to our Java Backend Trainee courses!\",\r\n        \"createdAt\": \"2023-06-19T23:54:15.843\",\r\n        \"comments\": [],\r\n        \"author\": \"Nick\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/posts/save",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Post By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/posts/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Digital Chief Trainee Recruitment\",\r\n    \"content\": \"recruitment to our Java Backend Trainee courses!\",\r\n    \"createdAt\": \"2023-06-19T23:54:15.843\",\r\n    \"comments\": [],\r\n    \"author\": \"Nick\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/posts/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/posts/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Comments By Post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/posts/1/comments",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts",
+						"1",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"Not worth it\",\r\n    \"createdAt\": \"2019-05-15T11:44:09\",\r\n    \"postId\": 1,\r\n    \"author\": \"Dude3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/posts/1/comments",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts",
+						"1",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"content\": \"I disagree\",\r\n        \"createdAt\": \"2019-05-18T00:34:05\",\r\n        \"postId\": 1,\r\n        \"author\": \"Dude3\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/posts/1/comments/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts",
+						"1",
+						"comments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Comment",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/posts/1/comments/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts",
+						"1",
+						"comments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
