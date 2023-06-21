@@ -1,6 +1,12 @@
 # crud-task
 An task for Digital Chief Trainee Program
 
+# domain area description
+Comments and posts it's an important part of many online communities. This composition can bee seen in many real world applications (for example, Twitter, Reddit, etc).
+Post - it's an distinct piece of content that a user shares with others. Most important and frequently used characteristics of post are: author, creation date, content and title.
+Commentary - it's an opinion that user leaves under the post. Usally, commentaries described by author, content and creation time.
+One post can have many commentaries, so the relation between Post and Comment entites in application should be One-To-Many.
+
 # dependencies
 Spring MVC
 Spring Data JPA (Hibernate ORM Provider)
